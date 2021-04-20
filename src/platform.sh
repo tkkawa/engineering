@@ -1,4 +1,5 @@
 #!/bin/sh
+
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 alias ls='ls --color=auto'

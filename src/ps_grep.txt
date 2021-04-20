@@ -1,1 +1,2 @@
-ps r | grep python
+ps ax | grep sleep.py
+ps ax | grep infinite_loop.py

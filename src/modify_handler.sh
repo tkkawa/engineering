@@ -1,6 +1,6 @@
 #!/bin/sh
-function print_modified_file {
+function print_modified_filenames {
     find . -type f -mmin -1
 }
 
-print_modified_file
+print_modified_filenames

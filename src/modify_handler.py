@@ -2,7 +2,7 @@ import os
 import time
 
 
-def main():
+def print_modified_filenames():
     nowtime = time.time()
     for dirname, subdirs, files in os.walk('.'):
         for filename in files:
@@ -10,6 +10,10 @@ def main():
             modified_time = os.stat(full_path).st_mtime
             if nowtime - modified_time < 60:
                 print(full_path)
+
+
+def main():
+    print_modified_filenames()
 
 
 if __name__ == '__main__':
